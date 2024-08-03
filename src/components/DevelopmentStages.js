@@ -53,7 +53,7 @@ const DevelopmentStages = () => {
       <h2 className="text-2xl md:text-4xl font-bold mb-10">
         Application Development Stages
       </h2>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-8">
         <div>
           {stages.slice(0, 3).map((stage) => (
             <div
@@ -76,7 +76,7 @@ const DevelopmentStages = () => {
             </div>
           ))}
         </div>
-        <div className="flex justify-center items-center">
+        <div className="hidden lg:flex justify-center items-center">
           <Image
             src={smartphoneImage}
             alt="Dashboard"

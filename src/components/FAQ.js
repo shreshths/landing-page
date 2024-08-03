@@ -42,28 +42,28 @@ const FAQ = () => {
   return (
     <section id="faq" className="py-10 md:py-20 pl-12 md:pl-28 pr-4 md:pr-8">
       <h2 className="text-2xl md:text-4xl font-bold mb-8">FAQ</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8">
         <div>
           {faqsLU.map((faq) => (
             <div
               key={faq.id}
               className={clsx(
                 "border-y",
-                faq.id === activeIndex ? "py-2" : "py-4"
+                faq.id === activeIndex ? "py-2" : " py-2 md:py-4"
               )}
             >
               <button
                 onClick={() => toggleFAQ(faq.id)}
                 className="w-full text-left py-4 flex justify-between items-center"
               >
-                <span className="text-[19px] font-semibold pr-4">
+                <span className="w-10/12 lg:w-fit text-[15px] lg:text-[19px] font-semibold pr-4">
                   {faq.question}
                 </span>
                 <span
                   className={clsx(
-                    "relative right-0 flex items-center justify-center text-[#77b300] text-5xl font-light w-16 h-16 rounded-full shadow-[0_2px_8px_-6px_black] transition-transform duration-300 transform",
+                    "relative right-0 flex items-center justify-center text-custom-green text-4xl lg:text-5xl font-light w-10 h-10 lg:w-16 lg:h-16 rounded-full lg:shadow-[0_2px_8px_-6px_black] transition-transform duration-300 transform",
                     {
-                      "rotate-45 translate-y-1/4 shadow-none text-[#789]":
+                      "rotate-45 md:translate-y-1/4 lg:shadow-none text-gray-400":
                         activeIndex === faq.id,
                     }
                   )}
@@ -88,21 +88,21 @@ const FAQ = () => {
               key={faq.id}
               className={clsx(
                 "border-y",
-                faq.id === activeIndex ? "py-2" : "py-4"
+                faq.id === activeIndex ? "py-2" : "py-2 md:py-4"
               )}
             >
               <button
                 onClick={() => toggleFAQ(faq.id)}
                 className="w-full text-left py-4 flex justify-between items-center"
               >
-                <span className="text-[19px] font-semibold pr-4">
+                <span className="w-10/12 lg:w-fit text-[15px] lg:text-[19px] font-semibold pr-4">
                   {faq.question}
                 </span>
                 <span
                   className={clsx(
-                    "flex items-center justify-center text-custom-green text-5xl font-light w-16 h-16 rounded-full shadow-[0_2px_8px_-6px_black] transition-transform duration-300 transform",
+                    "flex items-center justify-center text-custom-green text-4xl lg:text-5xl font-light w-10 h-10 lg:w-16 lg:h-16 rounded-full lg:shadow-[0_2px_8px_-6px_black] transition-transform duration-300 transform",
                     {
-                      "rotate-45 translate-y-1/4 shadow-none text-[#789]":
+                      "rotate-45 md:translate-y-1/4 lg:shadow-none text-gray-400":
                         activeIndex === faq.id,
                     }
                   )}
