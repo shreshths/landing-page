@@ -153,7 +153,7 @@ const Projects = () => {
               ) : null
             )}
           </div>
-          <h3 className="text-lg mt-12">
+          <h3 className="text-base md:text-lg mt-12">
             Business Analysis <span className="text-custom-yellow">/</span> iOS{" "}
             <span className="text-custom-yellow">/</span> Android{" "}
             <span className="text-custom-yellow">/</span> QA{" "}
@@ -191,13 +191,15 @@ const Projects = () => {
               </p>
             </div>
           </div>
-          <Image
-            src="/logos/app-market.png"
-            alt="App Market Logos"
-            width={300}
-            height={40}
-            className="mt-10"
-          />
+          <a href="javascript:void(0)" target="_blank">
+            <Image
+              src="/logos/app-market.png"
+              alt="App Market Logos"
+              width={300}
+              height={40}
+              className="mt-10"
+            />
+          </a>
         </div>
         <div className="hidden lg:block">
           <Image src={projectImage} alt="Project Image" className="ml-auto" />

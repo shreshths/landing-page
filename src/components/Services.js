@@ -20,15 +20,15 @@ const Services = () => {
             Full development cycle
           </h2>
           <p className="font-semibold">We use proven technologies</p>
-          <h4 className="font-semibold text-xl mt-8 mb-2">Web</h4>
-          <p className="text-base">
+          <h4 className="font-semibold text-lg md:text-xl mt-8 mb-2">Web</h4>
+          <p className="text-sm md:text-base">
             PHP <span>/</span> JavaScript <span>/</span> Node.js <span>/</span>{" "}
             Web Socket <span>/</span> Socket.io <span>/</span> Vue.js{" "}
             <span>/</span> Nuxt <span>/</span> MySQL <span>/</span> Laravel{" "}
             <span>/</span> Go lang <span>/</span> django <span>/</span> Python
           </p>
-          <h4 className="font-semibold text-xl mt-8 mb-2">Mobile</h4>
-          <p className="text-base">
+          <h4 className="font-semibold text-lg md:text-xl mt-8 mb-2">Mobile</h4>
+          <p className="text-sm md:text-base">
             Swift <span>/</span> Kotlin <span>/</span> Alamofire <span>/</span>{" "}
             Firebase <span>/</span> Core Data <span>/</span> Room <span>/</span>{" "}
             Realm <span>/</span>
@@ -44,7 +44,7 @@ const Services = () => {
           </style>
         </div>
         <div className="md:flex md:justify-center mt-10 md:mt-0">
-          <ul className="text-xl space-y-5">
+          <ul className="text-base md:text-xl space-y-5">
             {services.map((service, index) => (
               <li key={index}>
                 <Link href="javascript:void(0)" target="_blank">
