@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Logos from "@/../public/logos/logos.png";
+import Logos from "@/../public/logos/Logos.png";
 import Link from "next/link";
 const services = [
   "iOS Development",
