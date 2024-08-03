@@ -30,7 +30,7 @@ const Team = () => {
           </div>
           <p className="text-base font-medium leading-tight tracking-tighter mt-12">
             All the necessary specialists - from a designer to a tester - are on
-            our staff. We hire the best specialists in the market. It's
+            our staff. We hire the best specialists in the market. It&apos;s
             expensive but worth it
           </p>
         </div>

@@ -81,11 +81,11 @@ const Contact = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="text-white w-[16rem] lg:w-[25.5rem]">
           <h2 className="text-2xl md:text-4xl font-bold mb-8">
-            Let's discuss <br />
+            Let&apos;s discuss <br />
             Your project
           </h2>
           <p>
-            Let's figure out how to create an effective application, its cost
+            Let&apos;s figure out how to create an effective application, its cost
             and terms of its development
           </p>
         </div>
