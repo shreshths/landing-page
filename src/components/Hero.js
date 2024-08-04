@@ -78,9 +78,9 @@ const Hero = () => {
   };
 
   return (
-    <section className="bg-gray-100 overflow-hidden h-[54rem]">
+    <section className="bg-gray-100 overflow-hidden md:h-[54rem]">
       <div className="flex flex-row">
-        <div className="py-10 pl-12 pr-4 md:pr-8 md:py-20 md:pl-28 absolute z-10">
+        <div className="py-10 pl-12 pr-4 md:pr-8 md:py-20 md:pl-28 md:absolute z-10">
           <h1 className="text-2xl md:text-[39px] mt-16 sm:mt-20">
             <strong className="text-custom-yellow font-extrabold leading-none max-[1365px]:text-custom-yellow">
               User-Centric Excellence
@@ -110,7 +110,7 @@ const Hero = () => {
             to Unparalleled Heights.
           </div>
           <div className="w-min rounded-lg overflow-hidden shadow-lg bg-white">
-            <div className="pl-6 md:px-6 py-4">
+            <div className="pl-4 md:pl-6 px-4 md:px-6 py-4">
               <h1 className="w-10/12 text-sm md:text-xl font-extrabold">
                 Leave your contacts and we will call you back within 30 minutes
               </h1>
@@ -137,11 +137,13 @@ const Hero = () => {
                 )}
                 {message && (
                   <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 mt-4 rounded relative">
-                    <div className="flex justify-center">
-                      <strong className="text-2xl font-bold">{message}</strong>
+                    <div className="text-center">
+                      <strong className="text-lg md:text-2xl font-bold">
+                        {message}
+                      </strong>
                     </div>
                     <div className="mt-4 text-center">
-                      <p>
+                      <p className="text-[12.9px] md:text-[15px]">
                         We have received your details and we will get back to
                         you shortly!
                       </p>
@@ -292,7 +294,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="hidden sm:block w-full">
+        <div className="hidden md:block w-full">
           <Image
             className="ml-auto max-[1365px]:opacity-10"
             src={heroImage}

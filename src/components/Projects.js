@@ -11,7 +11,18 @@ const Projects = () => {
   const indicatorPosition = (id) => {
     const indicator = document.getElementById("indicator");
     const left = document.getElementById(`project-tab-${id}`).offsetLeft;
-    indicator.style.left = left - 80 + "px";
+    if (
+      left === 48 ||
+      left === 151 ||
+      left === 149 ||
+      left === 252 ||
+      left === 250 ||
+      left === 353
+    ) {
+      indicator.style.left = left - 30 + "px";
+    } else {
+      indicator.style.left = left - 96 + "px";
+    }
   };
 
   const industries = [

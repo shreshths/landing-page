@@ -85,12 +85,12 @@ const Contact = () => {
             Your project
           </h2>
           <p>
-            Let&apos;s figure out how to create an effective application, its cost
-            and terms of its development
+            Let&apos;s figure out how to create an effective application, its
+            cost and terms of its development
           </p>
         </div>
 
-        <div className="w-[16rem] lg:w-[30.8rem] rounded-lg overflow-hidden shadow-lg bg-white lg:ml-auto py-4 pl-6 pr-4">
+        <div className="w-[16.5rem] lg:w-[30.8rem] rounded-lg overflow-hidden shadow-lg bg-white lg:ml-auto py-4 pl-6 pr-4">
           <div>
             {errors.error && (
               <div
@@ -98,7 +98,7 @@ const Contact = () => {
                 role="alert"
               >
                 <strong className="font-bold">{errors.error}</strong>
-                <span className="absolute top-0 bottom-0 right-0 px-4 py-3">
+                <span className="absolute top-0 -right-2 px-4 py-3">
                   <svg
                     className="fill-current h-6 w-6 text-red-500"
                     role="button"
@@ -115,9 +115,11 @@ const Contact = () => {
             {message && (
               <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 mt-4 rounded relative">
                 <div className="flex justify-center">
-                  <strong className="text-2xl font-bold">{message}</strong>
+                  <strong className="text-lg md:text-2xl font-bold text-center">
+                    {message}
+                  </strong>
                 </div>
-                <div className="mt-4 text-center">
+                <div className="mt-4 text-[12.9px] md:text-[15px] text-center">
                   <p>
                     We have received your details and we will get back to you
                     shortly!
