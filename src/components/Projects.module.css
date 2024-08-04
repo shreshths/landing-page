@@ -1,0 +1,7 @@
+.technologies {
+  @apply text-base md:text-lg mt-12;
+}
+
+.technologies span {
+  color: #ffba00;
+}

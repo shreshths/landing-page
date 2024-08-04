@@ -40,7 +40,7 @@ const Team = () => {
             alt="Team"
             width={600}
             height={400}
-            className="rounded-[52px] shadow-[0_25px_20px_-15px_rgba(0,0,0,0.5)]"
+            className="rounded-[52px] shadow-[0_25px_20px_-15px_rgba(0,0,0,0.5)] mx-auto mt-4 md:mt-12 lg:mt-0 lg:ml-auto"
           />
         </div>
       </div>
