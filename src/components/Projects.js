@@ -17,7 +17,12 @@ const Projects = () => {
       left === 149 ||
       left === 252 ||
       left === 250 ||
-      left === 353
+      left === 353 ||
+      left === 160 ||
+      left === 161 ||
+      left === 277 ||
+      left === 276 ||
+      left === 392
     ) {
       indicator.style.left = left - 30 + "px";
     } else {
@@ -261,15 +266,32 @@ const Projects = () => {
                       </p>
                     </div>
                   </div>
-                  <a href="javascript:void(0)" target="_blank">
-                    <Image
-                      src="/logos/app-market.png"
-                      alt="App Market Logos"
-                      width={300}
-                      height={40}
-                      className="mt-10"
-                    />
-                  </a>
+                  <div className="sm:flex mt-10">
+                    <a
+                      href="javascript:void(0)"
+                      target="_blank"
+                      className="block sm:mr-4 mb-4 sm:mb-0"
+                    >
+                      <Image
+                        src="/logos/ios.png"
+                        alt="App Store Logo"
+                        width={148}
+                        height={40}
+                      />
+                    </a>
+                    <a
+                      href="javascript:void(0)"
+                      target="_blank"
+                      className="block"
+                    >
+                      <Image
+                        src="/logos/android.png"
+                        alt="Play Store Logo"
+                        width={136}
+                        height={40}
+                      />
+                    </a>
+                  </div>
                 </div>
                 <div className="hidden lg:block">
                   <Image

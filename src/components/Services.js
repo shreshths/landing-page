@@ -1,6 +1,7 @@
-import Image from "next/image";
-import Logos from "@/../public/logos/Logos.png";
 import Link from "next/link";
+
+const logo = "/logos/planet.png";
+
 const services = [
   "iOS Development",
   "Android Development",
@@ -13,7 +14,25 @@ const services = [
 const Services = () => {
   return (
     <section id="services" className="py-10 md:py-20 pl-7 md:pl-14">
-      <Image src={Logos} alt="Logos" />
+      <div className="py-4 md:py-8 lg:py-12 border-y border-gray-200">
+        <div className="flex justify-around md:justify-between">
+          {Array.from({ length: 2 }).map((_, index) => (
+            <div key={index} className="flex justify-center">
+              <img src={logo} alt={`Planet logo ${index + 1}`} />
+            </div>
+          ))}
+          {Array.from({ length: 2 }).map((_, index) => (
+            <div key={index} className="hidden md:flex justify-center">
+              <img src={logo} alt={`Planet logo ${index + 1}`} />
+            </div>
+          ))}
+          {Array.from({ length: 2 }).map((_, index) => (
+            <div key={index} className="hidden lg:flex justify-center">
+              <img src={logo} alt={`Partner logo ${index + 1}`} />
+            </div>
+          ))}
+        </div>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pl-6 md:pl-12 pr-8 mt-8">
         <div>
           <h2 className="text-2xl md:text-4xl font-bold mb-8">
