@@ -12,6 +12,18 @@ export const metadata = {
   title: "My Company - Leading App Development Company",
   description:
     "Explore My Company, a leading company in app development with over 100 projects 15 industries.",
+  keywords: [
+    "My Company",
+    "App Development",
+    "iOS Development",
+    "Android Development",
+    "Web Development",
+    "UX/UI Design",
+    "Testing",
+    "Launch",
+    "IT Consulting",
+    "Software Development",
+  ],
 };
 
 export default function RootLayout({ children }) {
@@ -20,6 +32,7 @@ export default function RootLayout({ children }) {
       <head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
+        <meta name="keywords" content={metadata.keywords.join(", ")} />
       </head>
       <body className={inter.className}>
         <Header />
